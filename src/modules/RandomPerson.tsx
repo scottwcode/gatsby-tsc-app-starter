@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { RouteComponentProps } from "@reach/router"
 
-interface Props
-  extends RouteComponentProps<{
-    results: string
-  }> {}
+// // Old code that supposedly worked without interface to url
+// type Props = RoutComponentProps
+
+// export const RandomPerson: React.FC<Props> = () => {
+//   return <div>hello</div>
+// }
+
+// Code with interface to url
+type Props = RouteComponentProps<{
+  results: string
+}>
 
 export const RandomPerson: React.FC<Props> = ({ results = 1 }) => {
   const [person, setPerson] = useState()

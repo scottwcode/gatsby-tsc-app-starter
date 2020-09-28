@@ -6,7 +6,7 @@ const Router = () => {
   const sample = ""
   return (
     <MyRouter>
-      <RandomPerson path="/app/random-person/:results" />
+      <RandomPerson path="/app/random-person/:?results" />
     </MyRouter>
   )
 }
