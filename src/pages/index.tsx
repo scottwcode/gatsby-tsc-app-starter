@@ -19,6 +19,9 @@ const IndexPage = () => (
     <p>
       <Link to="/app/random-person/5">Go to app/random-person/5</Link>
     </p>
+    <p>
+      <Link to="/app/random-biz/1">Go to app/random-biz/1</Link>
+    </p>
   </Layout>
 )
 
